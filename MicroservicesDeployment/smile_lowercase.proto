@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+message LowerSmileRequest {
+    int32 user_id = 1;
+}
+
+message LowerSmile {
+    int32 user_id = 1;
+    string message = 2;
+}
+
+message LowerSmileResponse {
+    repeated LowerSmile LowerSmiles = 1;
+}
+
+service LowrSmiles {
+    rpc lowersmile (LowerSmileRequest) returns (LowerSmileResponse);
+}

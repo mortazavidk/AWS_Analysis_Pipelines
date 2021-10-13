@@ -1,0 +1,27 @@
+{
+  "Marker": "string",
+  "NextMarker": "string",
+  "Contents": [
+    {
+      "Key": "string",
+      "LastModified": "2015",
+      "ETag": "string",
+      "Size": 123,
+      "StorageClass":"STANDARD", 
+      "Owner": {
+        "DisplayName": "string",
+        "ID": "string"
+      }
+    }
+  ],
+  "Name": "string",
+  "Prefix": "string",
+  "Delimiter": "string",
+  "MaxKeys": 123,
+  "CommonPrefixes": [
+    {
+      "Prefix": "string"
+    }
+  ],
+  "EncodingType": "url"
+}

@@ -1,0 +1,18 @@
+<!-- homepage.hrml-->
+<html lang="en">
+    <head>
+        <title>
+            Smile is everything
+        </title>
+    </head>
+    <body>
+        <h1>
+            SMILE
+        </h1>
+        <ul>
+            {% for smile in lowersmile %}
+              <li>{{smile.message}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

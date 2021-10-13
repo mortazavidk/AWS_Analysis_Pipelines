@@ -1,0 +1,24 @@
+version: "3.8"
+services:
+  smile_lowercase_frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    environment:
+      SMIELOWERCASE_HOST: smile_lowercase
+    image: smile_lowercase_frondend
+    networks:
+      - microservices
+    ports:
+      - 5000:5000
+
+  smile_lowercase:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: smile_lowercase
+    networks:
+      - microservices
+
+networks:
+  microservices:
